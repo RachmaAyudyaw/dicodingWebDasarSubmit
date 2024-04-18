@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;1,700&family=Rubik:wght@500;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* font-family: 'Rubik', sans-serif; */
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
+    position:sticky;
+}
+
+header.navbar-container .logo a{
+    font-size: 3rem;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+header.navbar-container .logo a span{
+    color:#F2C033;
+}
+
+header.navbar-container .navbar .navigation{
+    display: flex;
+   justify-content: center;
+   gap: 2rem 1rem;
+   padding-left: 0;
+   margin:0;
+   padding:0;
+}
+
+header.navbar-container .navbar .navigation li{
+    list-style-type: none;
+}
+
+header.navbar-container .navbar .navigation li a{
+    color: #1A1A1A;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem .5rem;
+    transition: all .5 ease-in-out;
+}
+
+header.navbar-container .navbar .navigation li a:hover{
+    background-color: #F2C033;
+    color: white;
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+/* main */
+/* section-atas */
+main{
+    max-width:1200px;
+    width:100%;
+    margin-inline: auto;
+    padding:1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .section-atas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:1;
+    gap: 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+main .section-atas .section-atas-description{
+    flex: 1 1;
+}
+
+main .section-atas .section-atas-description .desc{
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    font-family: 'Rubik',sans-serif;
+    color:#1A1A1A;
+}
+
+main .section-atas .section-atas-description .desc span{
+    color:#045285;
+}
+
+main .section-atas .section-atas-description p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+
+main .section-atas .section-atas-image{
+    flex:1;
+    display: flex;
+}
+
+main .section-atas .section-atas-image img{
+    margin: auto;
+    min-width: 250px;
+    width: 650px;
+}
+
+main .section-atas button{
+    padding: 1rem 1.5rem;
+    color:#1A1A1A;
+    font-family: 'Roboto',sans-serif;
+    transition: .3s ease-in-out;
+    border:none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: none;
+}
+
+main .section-atas button:hover{
+   background-color: #F2C033;
+   color: white;
+}
+
+/* section-layanan */
+main .section-layanan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:1;
+    gap: 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+div.section-layanan .kiri {
+    flex:1;
+}
+div.section-layanan .kiri h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    color: #1A1A1A;
+    font-size: 2rem;
+}
+
+div.section-layanan .kiri .image-anak{
+    position:relative;
+}
+
+div.section-layanan .kiri .image-anak .atas{
+    position:absolute;
+    top:40%;
+    left: 40%;
+    z-index: 1;
+    text-align: center;
+    margin:auto;
+}
+
+div.section-layanan .kiri .image-anak .bawah{
+    margin: auto;
+    min-width: 250px;
+}
+
+
+div.section-layanan .kanan{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem 1rem;
+}
+
+div.section-layanan .kanan div{
+    flex: 1 1 40%;
+}
+
+div.section-layanan .kanan h3{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div.section-layanan .kanan p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*layanan paket*/
+main .section-paket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+main .section-paket .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-paket .title h2{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
+    font-size: 2rem;
+    margin-block: 1rem;
+    margin-bottom: 0;
+}
+
+main .section-paket .title p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: #1A1A1A;
+    font-size: 1rem;
+    margin: 1rem .5rem;
+    text-align: center;
+}
+
+main .section-paket .card-paket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1rem;
+}
+
+main .section-paket .card-paket .card{
+    background-color: #FEF7E5;;
+    color: #1A1A1A;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+
+main .section-paket .card-paket .card:hover{
+    background: #F2C033;
+    transform: scale(1.05);
+}
+
+main .section-paket .card-paket .card:hover img{
+    content:url('/image/Checklist\ _putih.png')
+}
+
+main .section-paket .card-paket .card:hover button{
+    background: linear-gradient(45deg,#056AAD,#045285);
+    color: #fff;
+}
+
+main .section-paket .card-paket .card .list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem .5rem;
+}
+
+main .section-paket .card-paket .card .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .section-paket .card-paket .card button{
+    display: flex;
+    gap: 1rem 1rem;
+    padding: 5px 15px;
+    align-items: center;
+    background-color: #F2C033;
+    border:none;
+    color: #1A1A1A;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+}
+
+main .section-paket .card-paket .card h4{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: medium;
+    font-size: 1.5rem;
+}
+main .section-paket .card-paket .card .list img{
+    width:35px;
+    height: 35px;
+}
+main .section-paket .card-paket .card .list p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* aside */
+main .section-review{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-review .judul{
+     font-family: 'Rubik', sans-serif;
+     font-size: 1.5rem;
+     font-weight: 500;
+     text-align: center;
+}
+
+main .section-review .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main .section-review .card .quote{
+    flex:2;
+}
+
+main .section-review .card .quote p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+main .section-review .card aside{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .section-review .card aside img{
+   width: 170px;
+   height: 170px;
+   object-fit: cover ;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+}
+
+main .section-review  aside .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-review .card aside p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    margin:0;
+}
+
+/* section-gabung */
+main .section-gabung{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2C033;
+    color:#1A1A1A;
+    border-radius:15px;
+    padding:2rem 2rem;
+}
+
+main .section-gabung .kiri h2{
+    font-family: 'Rubik',sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+main .section-gabung .kiri p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+main .section-gabung .kanan button{
+    padding: 1rem 1.5rem;
+    color:#1A1A1A;
+    font-family: 'Roboto',sans-serif;
+    transition: .3s ease-in-out;
+    border:none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: none;
+}
+
+main .section-gabung .kanan button:hover{
+    background: linear-gradient(45deg,#056AAD,#045285);
+    color: #fff;
+}
+
+/* footer */
+footer{
+    width:100%;
+    background-color: #FAE3A4;
+    margin:0;
+    padding:0;
+}
+
+footer .container{
+    display: flex;
+    padding:1rem 2rem; 
+}
+
+footer .container .hangulin{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1rem;
+}
+
+footer .container .hangulin h4{
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color:#045285;
+    margin-block: 1rem;
+}
+
+footer .container .hangulin h4 span{
+    color:#EC7589;
+}
+
+footer .container .hangulin p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+}
+
+footer .container .links{
+    display: flex;
+    flex: 2 2 1rem;
+    justify-content: space-around;
+}
+
+footer .container .links ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem 1rem;
+}
+
+footer .container .links ul li{
+    list-style-type: none;
+}
+
+footer .container .links ul li.judul{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+footer .container ul li a, li{
+    text-decoration: none;
+    color:#1A1A1A;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+
+footer .container ul li form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem 1rem;
+    align-items: start;
+}
+
+footer .container ul li form input[type="email"]{
+    width: 100%;
+    border:none;
+    padding: 10px 18px;
+}
+
+footer .container ul li form input[type="submit"]{
+    padding: .5rem 1.5rem;
+    color:#1A1A1A;
+    font-family: 'Roboto',sans-serif;
+    transition: .3s ease-in-out;
+    border:none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: none;
+}
+
+footer .container ul li form input[type="submit"]:hover{
+    background: linear-gradient(45deg,#056AAD,#045285);
+    color: #fff;
+}
+
+.legalitas, .jelajahi, .perusahaan, .newsletter{
+    flex:1;
+}
+
+@media screen and (max-width:768px) {
+    header.navbar-container .logo a{
+        font-size: 2.5rem;
+    }
+
+    header.navbar-container .navbar .navigation{
+        gap: 2rem;
+        z-index: 1000;
+        position:fixed;
+        inset: 0 0 0 50%;
+        flex-direction: column;
+        background-color: #F2C033;
+        padding: min(30vh, 10rem) 2em;
+        background: #FEF7E5;
+        backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    header.navbar-container .navbar .navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    header.navbar-container .mobile-nav-toggle{
+        display: block;
+        position:absolute;
+        background: red;
+        width: 2rem;
+        aspect-ratio: 1;
+        top:2rem;
+        right:2rem;
+        z-index: 9999;
+        background: url('/image/bars-solid.svg');
+        border:none;
+        background-repeat: no-repeat;
+        background-color:transparent;
+    }
+
+    header.navbar-container .mobile-nav-toggle[aria-expanded="true"]{
+        background: url('/image/xmark-solid\ \(1\).svg');
+        background-repeat: no-repeat;
+    }
+    main{
+        padding: 1rem 3rem;
+    }
+
+    main .section-atas{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    main .section-atas .section-atas-description .desc{
+        font-size: 3rem;
+    }
+
+    main .section-atas .section-atas-description p{
+        font-size: 1rem;
+    }
+
+    main .section-atas .section-atas-image{
+        order:-1;
+        width: 400px;
+    }
+
+    main .section-layanan{
+        flex-direction: column;
+        gap:2rem;
+        flex-wrap: wrap;
+    }
+
+    div.section-layanan .kiri .image-anak .atas{
+        position:absolute;
+        top:40%;
+        left: 40%;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    div.section-layanan .kiri .image-anak .bawah{
+        width:346px;
+    }
+
+    main .section-paket{
+        gap:2rem;
+    }
+
+    main .section-paket .card-paket{
+        flex-wrap: wrap;
+    }
+
+    main .section-paket .card-paket .card{
+        flex: 1 1 50%;
+    }
+
+    main .section-review .card{
+        flex-direction: column;
+    }
+    main .section-gabung{
+        flex-direction: column;
+    }
+
+
+    footer .container{
+        flex-direction: column;
+        gap:2rem;
+        flex-wrap: wrap;
+    }
+
+    footer .container .links{
+        flex-wrap: wrap;
+        gap:2rem;
+    }
+    
+}
+
+
